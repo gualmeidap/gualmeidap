@@ -14,19 +14,22 @@
 
 
 <p align="left">
-    <a href="https://www.instagram.com/gualmeida._/">
-        <img 
-            alt="instagram" 
-            title="Instagram" 
-            src="https://custom-icon-badges.demolab.com/badge/Instagram-FF0069?logo=instagram&logoColor=white"
-        />
-    </a>
-    </a>
     <a href="https://www.linkedin.com/in/gustavo-henrique-de-almeida-pereira-597ba3248/">
         <img 
             alt="linkedin" 
             title="Meu perfil no LinkedIn" 
+            width="100px"
+            height="25px"  
             src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white"
+        />
+    </a>
+    <a href="https://www.instagram.com/gualmeida._/">
+        <img 
+            alt="instagram" 
+            title="Instagram" 
+            width="100px" 
+            height="25px"  
+            src="https://custom-icon-badges.demolab.com/badge/Instagram-FF0069?logo=instagram&logoColor=white"
         />
     </a>
 </p>
@@ -37,14 +40,6 @@
 
 <img 
     align="left" 
-    alt="Go"
-    title="Go" 
-    width="30px" 
-    style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg"
-/>
-<img 
-    align="left" 
     alt="Python" 
     title="Python"
     width="30px" 
@@ -53,11 +48,27 @@
 />
 <img 
     align="left" 
+    alt="Go"
+    title="Go" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+/>
+<img 
+    align="left" 
     alt="Java" 
     title="Java"
     width="30px" 
     style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"        
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"        
+/>
+<img 
+    align="left" 
+    alt="PostgreSQL" 
+    title="PostgreSQL"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg"
 />
 <img 
     align="left" 
@@ -65,9 +76,16 @@
     title="MySQL"
     width="30px" 
     style="padding-right: 10px;" 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
 />
-
+<img 
+    align="left" 
+    alt="Git" 
+    title="Git"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+/>
 <br/>
 <br/>
 
