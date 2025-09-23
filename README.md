@@ -61,17 +61,20 @@
 
 ### 📊 Estatísticas
 
-<div align="center">
-    <a href="https://github.com/gutelo">
-        <img 
-            alt="GitHub Stats" 
-            height="180em" 
-            src="https://github-readme-stats.vercel.app/api?username=gutelo&show_icons=true&theme=aura&include_all_commits=true" 
-        />
-        <img 
-            alt="GitHub Stats" 
-            height="180em" 
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutelo&theme=aura&layout=compact&langs_count=6&hide=Mako"
-        />
-    </a>
-</div>
+<p>
+  <img 
+    align="left" 
+    alt="GitHub Stats" 
+    height="200" 
+    style="padding-right: 10px;" 
+    src="https://github-readme-stats.vercel.app/api?username=gutelo&show_icons=true&theme=aura&include_all_commits=true" 
+  />
+
+<img 
+      align="left" 
+      alt="GitHub Stats" 
+      height="200" 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutelo&theme=aura&layout=compact&langs_count=6&hide=Mako" 
+  />
+
+</p>
