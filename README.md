@@ -61,7 +61,7 @@
 
 ### 📊 Estatísticas
 
-<div allign="center">
+<div align="center">
     <a href="https://github.com/gutelo">
         <img 
             alt="GitHub Stats" 
