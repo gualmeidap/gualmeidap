@@ -67,14 +67,14 @@
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=gutelo&show_icons=true&theme=aura&include_all_commits=true" 
+    src="https://github-readme-stats.vercel.app/api?username=gualmeidap&show_icons=true&include_all_commits=true&theme=aura&count_private=true" 
   />
 
 <img 
       align="left" 
       alt="GitHub Stats" 
       height="200" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=gutelo&theme=aura&layout=compact&langs_count=6&hide=Mako" 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=gualmeidap&theme=aura&layout=compact&langs_count=6&hide=Mako" 
   />
 
 </p>
