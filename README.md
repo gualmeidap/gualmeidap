@@ -19,10 +19,10 @@
 
 ### 📊 Estatísticas
 
-<p align="center">
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=gualmeidap&show_icons=true&theme=highcontrast&include_all_commits=true&count_private=true&border_radius=0&show_owner=true&title_color=blue" />
+<p align="center" style="display: flex; align-items: center;">
+  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=gualmeidap&show_icons=true&theme=highcontrast&include_all_commits=true&count_private=true&border_radius=0&show_owner=true&title_color=blue&locale=pt-BR&rank=custom" style="flex-shrink: 0;" />
   &nbsp;
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gualmeidap&layout=compact&theme=highcontrast&langs_count=6&hide=mako&border_radius=0&title_color=blue" />
+  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gualmeidap&layout=compact&theme=highcontrast&langs_count=6&hide=mako&border_radius=0&title_color=blue&locale=pt-BR&rank=custom" style="flex-shrink: 0;" />
 </p>
 
 ---
