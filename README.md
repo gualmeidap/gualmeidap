@@ -1,34 +1,87 @@
-# 👨🏻‍💻 Gustavo Almeida
+<div align="center">
 
-**`Desenvolvedor Back-End`**
+# Hey, I'm Gustavo Henrique 👋
 
-💻 Cientista da Computação em formação.
+**Back-end Developer** · Building scalable systems, automating workflows & designing robust architectures
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gualmeidap)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gualmeidap)
+[![Profile Views](https://komarev.com/ghpvc/?username=gualmeidap&style=for-the-badge&color=6e7681)](https://github.com/gualmeidap)
 
-### 🤖 Linguagens e Tecnologias
-
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="30" title="Python" alt="Python" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" width="30" title="Go" alt="Go" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="30" title="Java" alt="Java" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" width="30" title="PostgreSQL" alt="PostgreSQL" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="30" title="MySQL" alt="MySQL" />&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="30" title="Git" alt="Git" />
-</p>
-
-### 📊 Estatísticas
-
-<p align="center" style="display: flex; align-items: center;">
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api?username=gualmeidap&show_icons=true&theme=highcontrast&include_all_commits=true&count_private=true&border_radius=0&show_owner=true&title_color=blue&locale=pt-BR&rank=custom" style="flex-shrink: 0;" />
-  &nbsp;
-  <img height="180" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=gualmeidap&layout=compact&theme=highcontrast&langs_count=6&hide=mako&border_radius=0&title_color=blue&locale=pt-BR&rank=custom" style="flex-shrink: 0;" />
-</p>
+</div>
 
 ---
 
-### ⚙️ Especificações do Ambiente
-* **Main Stack:** `Python` | `Go` | `Java`
-* **Data Persistence:** `PostgreSQL` | `MySQL`
-* **Status:** `Ativo e constante`
-* **Foco:** `Desenvolvimento de Sistemas & Performance`
+## About Me
+
+I'm a **Back-end Developer** passionate about building systems that solve real operational problems at scale. My focus lies in process automation, data pipeline architecture, and crafting APIs that are both performant and maintainable. I enjoy working close to infrastructure — from containerized deployments to integrating local LLMs into workflows — always with an eye toward clean, purposeful engineering.
+
+- 🔭 Currently building automation tools and internal platforms
+- 🧠 Exploring local AI inference with **Ollama** for private, production-ready LLM integration
+- 🐳 Strong believer in containerized, reproducible environments
+- 📬 Reach me at: [GitHub](https://github.com/gualmeidap)
+
+---
+
+## 🛠 Tech Stack
+
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+### Frameworks & Libraries
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+
+### Infrastructure & Tools
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=llama&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+### 📬 Notes System — Email Automation Pipeline
+> Automated email-driven note processing system built with **Python**, leveraging **IMAP/SMTP** protocols for real-time inbox monitoring and **Docker** for fully containerized deployment — eliminating manual data entry and enabling reliable, high-throughput processing of structured information flows with minimal operational overhead.
+
+---
+
+### 🤝 Partnership Management System
+> Full-stack internal platform developed with **Python/Flask** and **PostgreSQL**, featuring **OCR integration** for automatic document parsing — replacing entirely manual, spreadsheet-based workflows and centralizing partnership tracking, contract management, and operational reporting into a single, auditable system.
+
+---
+
+## 📊 GitHub Metrics
+
+### Core Stats & Languages
+<div align="center">
+  <img src="stats.svg" alt="GitHub Stats" />
+  <img src="langs.svg" alt="Top Languages" />
+</div>
+
+### 🔥 Contribution Streak
+<div align="center">
+  <img src="streak.svg" alt="GitHub Streak" />
+</div>
+
+
+---
+
+### 📈 Contribution Activity Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=gualmeidap&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph"/>
+
+</div>
+
+---
+
+<div align="center">
+
+*"First, solve the problem. Then, write the code."* — John Johnson
+
+</div>
