@@ -19,7 +19,6 @@ I'm a **Back-end Developer** passionate about building systems that solve real o
 - 🔭 Currently building automation tools and internal platforms
 - 🧠 Exploring local AI inference with **Ollama** for private, production-ready LLM integration
 - 🐳 Strong believer in containerized, reproducible environments
-- 📬 Reach me at: [GitHub](https://github.com/gualmeidap)
 
 ---
 
