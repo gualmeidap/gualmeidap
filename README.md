@@ -68,15 +68,12 @@ I'm a **Back-end Developer** passionate about building systems that solve real o
   <img src="streak.svg" alt="GitHub Streak" />
 </div>
 
-
 ---
 
 ### 📈 Contribution Activity Graph
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gualmeidap&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph"/>
-
+  <img src="activity.svg" alt="Contribution Activity Graph"/>
 </div>
 
 ---
