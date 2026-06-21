@@ -1,28 +1,47 @@
 name: GitHub Metrics
 on:
-  # Atualiza as métricas automaticamente todos os dias à meia-noite
   schedule: [{cron: "0 0 * * *"}]
-  # Permite que você force a atualização manualmente
   workflow_dispatch:
 
 jobs:
-  github-metrics:
+  gerar-metricas:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # 1. Card de Estatísticas Gerais (Stats)
+      - name: Gerar Stats
+        uses: lowlighter/metrics@latest
         with:
-          # Usa o secret que você já configurou para ler os repositórios privados
+          filename: stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          config_timezone: America/Sao_Paulo
-          
-          # Estatísticas gerais (Stats)
           base: header, activity, community, repositories, metadata
-          
-          # Linguagens (Langs)
+          config_timezone: America/Sao_Paulo
+
+      # 2. Card de Linguagens (Langs)
+      - name: Gerar Langs
+        uses: lowlighter/metrics@latest
+        with:
+          filename: langs.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: "" # Remove os dados base para ficar apenas a caixa de linguagens
           plugin_languages: yes
-          plugin_languages_ignored: html, css # Oculta o front-end para manter as métricas focadas estritamente no back-end
+          plugin_languages_ignored: html, css # Mantém as métricas puramente focadas no Back-end
           plugin_languages_details: percentage
           
-          # Calendário de contribuições e sequência (Streak)
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+  gerar-streak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        
+      # 3. Card de Sequência de Commits (Streak)
+      - name: Gerar Streak
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          github_user: seu-usuario # << SUBSTITUA PELO SEU USUÁRIO AQUI
+          github_token: ${{ secrets.METRICS_TOKEN }}
+          
+      - name: Salvar Streak no repositório
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Atualiza as métricas do Streak"
+          file_pattern: "*.svg"
