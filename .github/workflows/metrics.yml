@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  gerar-metricas:
+  gerar-metricas-lowlighter:
     runs-on: ubuntu-latest
     steps:
-      # 1. Card de Estatísticas Gerais (Stats)
+      # 1. Stats
       - name: Gerar Stats
         uses: lowlighter/metrics@latest
         with:
@@ -16,32 +16,46 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: America/Sao_Paulo
 
-      # 2. Card de Linguagens (Langs)
+      # 2. Langs (Ignorando front-end)
       - name: Gerar Langs
         uses: lowlighter/metrics@latest
         with:
           filename: langs.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: "" # Remove os dados base para ficar apenas a caixa de linguagens
+          base: "" 
           plugin_languages: yes
-          plugin_languages_ignored: html, css # Mantém as métricas puramente focadas no Back-end
+          plugin_languages_ignored: html, css
           plugin_languages_details: percentage
           
+      # 3. Activity Graph (Calendário Isométrico local lendo dados privados)
+      - name: Gerar Activity Graph
+        uses: lowlighter/metrics@latest
+        with:
+          filename: activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
   gerar-streak:
     runs-on: ubuntu-latest
+    needs: gerar-metricas-lowlighter # Garante que roda depois dos outros para não dar conflito de commit
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
         
-      # 3. Card de Sequência de Commits (Streak)
+      # 4. Streak
       - name: Gerar Streak
         uses: DenverCoder1/github-readme-streak-stats@v1
         with:
-          github_user: seu-usuario # << SUBSTITUA PELO SEU USUÁRIO AQUI
+          github_user: gualmeidap
           github_token: ${{ secrets.METRICS_TOKEN }}
           
-      - name: Salvar Streak no repositório
+      - name: Renomear arquivo do Streak
+        run: mv github-readme-streak-stats.svg streak.svg
+          
+      - name: Salvar tudo no repositório
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Atualiza as métricas do Streak"
+          commit_message: "Atualiza as métricas (Stats, Langs, Streak, Activity)"
           file_pattern: "*.svg"
