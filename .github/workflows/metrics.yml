@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 1. Stats (Lines of Code) - Auto-commit via API com Depuração
+      # 1. Stats (Lines of Code) - Auto-commit via API com Configurações e Limites de Análise
       - name: Gerar Stats (Lines of Code)
         uses: lowlighter/metrics@latest
         with:
@@ -18,6 +18,9 @@ jobs:
           committer_token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_lines: yes
+          plugin_lines_sections: base, repositories, history
+          plugin_lines_repositories_limit: 10
+          plugin_lines_history_limit: 2
           config_theme: github-dark
           plugins_errors_fatal: yes
           debug: yes
