@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 1. Stats (Lines of Code) - Auto-commit via API
+      # 1. Stats (Lines of Code) - Auto-commit via API com Depuração
       - name: Gerar Stats (Lines of Code)
         uses: lowlighter/metrics@latest
         with:
@@ -19,8 +19,10 @@ jobs:
           base: ""
           plugin_lines: yes
           config_theme: github-dark
+          plugins_errors_fatal: yes
+          debug: yes
 
-      # 2. Langs (Ignorando front-end) - Auto-commit via API
+      # 2. Langs (Ignorando front-end) - Auto-commit via API com Erro Fatal Ativo
       - name: Gerar Langs
         uses: lowlighter/metrics@latest
         with:
@@ -32,8 +34,9 @@ jobs:
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
           config_theme: github-dark
+          plugins_errors_fatal: yes
           
-      # 3. Activity Graph (Calendário Isométrico local) - Auto-commit via API
+      # 3. Activity Graph (Calendário Isométrico local) - Auto-commit via API com Erro Fatal Ativo
       - name: Gerar Activity Graph
         uses: lowlighter/metrics@latest
         with:
@@ -44,6 +47,7 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           config_theme: github-dark
+          plugins_errors_fatal: yes
 
       # 4. Checkout do repositório (Agora com os SVGs atualizados inclusos)
       - name: Checkout do repositório
