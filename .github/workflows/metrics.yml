@@ -9,18 +9,16 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout do repositório
-        uses: actions/checkout@v4
-
       # 1. Stats
       - name: Gerar Stats
         uses: lowlighter/metrics@latest
         with:
           filename: stats.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
           config_timezone: America/Sao_Paulo
-          output_action: none
+          config_theme: github-dark
 
       # 2. Langs (Ignorando front-end)
       - name: Gerar Langs
@@ -28,11 +26,12 @@ jobs:
         with:
           filename: langs.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
           base: "" 
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_details: percentage
-          output_action: none
+          config_theme: github-dark
           
       # 3. Activity Graph (Calendário Isométrico local)
       - name: Gerar Activity Graph
@@ -40,30 +39,30 @@ jobs:
         with:
           filename: activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          output_action: none
+          config_theme: github-dark
 
-      # 4. Streak
+      # 4. Checkout do repositório
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      # 5. Streak
       - name: Gerar Streak
         uses: DenverCoder1/github-readme-streak-stats@v1.7.0
         with:
           github_user: gualmeidap
           github_token: ${{ secrets.METRICS_TOKEN }}
           path: streak.svg
+          options: theme=dark
 
-      # 5. Mover os arquivos do Lowlighter (/rendered/) para a raiz do workspace
-      - name: Mover arquivos do lowlighter/metrics
-        run: |
-          if [ -d /rendered ]; then
-            cp -r /rendered/* .
-          fi
-        shell: bash
-          
-      # 6. Salvar tudo no repositório com um único commit
-      - name: Salvar tudo no repositório
+      # 6. Salvar Streak no repositório
+      - name: Salvar Streak no repositório
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Atualiza as métricas (Stats, Langs, Streak, Activity)"
-          file_pattern: "*.svg"
+          commit_message: "Atualiza as métricas (Streak)"
+          file_pattern: "streak.svg"
