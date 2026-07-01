@@ -9,7 +9,18 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 1. Langs (Ignorando front-end) - Auto-commit via API
+      # 1. Stats (Lines of Code) - Auto-commit via API
+      - name: Gerar Stats (Lines of Code)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: stats.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_lines: yes
+          config_theme: github-dark
+
+      # 2. Langs (Ignorando front-end) - Auto-commit via API
       - name: Gerar Langs
         uses: lowlighter/metrics@latest
         with:
@@ -22,7 +33,7 @@ jobs:
           plugin_languages_details: percentage
           config_theme: github-dark
           
-      # 2. Activity Graph (Calendário Isométrico local) - Auto-commit via API
+      # 3. Activity Graph (Calendário Isométrico local) - Auto-commit via API
       - name: Gerar Activity Graph
         uses: lowlighter/metrics@latest
         with:
@@ -34,20 +45,11 @@ jobs:
           plugin_isocalendar_duration: full-year
           config_theme: github-dark
 
-      # 3. Checkout do repositório (Agora com os SVGs atualizados inclusos)
+      # 4. Checkout do repositório (Agora com os SVGs atualizados inclusos)
       - name: Checkout do repositório
         uses: actions/checkout@v4
         with:
           ref: main
-
-      # 4. GitHub Readme Stats (Substituindo o stats do lowlighter)
-      - name: Gerar GitHub Readme Stats
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=gualmeidap&show_icons=true&theme=tokyonight&count_private=true
-          path: stats.svg
-          token: ${{ secrets.METRICS_TOKEN }} # PAT que lê repositórios privados
 
       # 5. Streak
       - name: Gerar Streak
@@ -58,9 +60,9 @@ jobs:
           path: streak.svg
           options: theme=dark
 
-      # 6. Salvar Streak e Stats no repositório
-      - name: Salvar métricas no repositório
+      # 6. Salvar Streak no repositório
+      - name: Salvar Streak no repositório
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Atualiza as métricas (Streak e Stats)"
-          file_pattern: "streak.svg stats.svg"
+          commit_message: "Atualiza as métricas (Streak)"
+          file_pattern: "streak.svg"

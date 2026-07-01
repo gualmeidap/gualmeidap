@@ -57,7 +57,7 @@ I'm a **Back-end Developer** passionate about building systems that solve real o
 
 ## 📊 GitHub Metrics
 
-### Core Stats & Languages
+### Lines of Code & Languages
 <div align="center">
   <img src="stats.svg" alt="GitHub Stats" />
   <img src="langs.svg" alt="Top Languages" />
