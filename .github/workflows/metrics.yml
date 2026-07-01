@@ -47,7 +47,7 @@ jobs:
 
       # 4. Streak
       - name: Gerar Streak
-        uses: DenverCoder1/github-readme-streak-stats@v1
+        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
         with:
           github_user: gualmeidap
           github_token: ${{ secrets.METRICS_TOKEN }}
