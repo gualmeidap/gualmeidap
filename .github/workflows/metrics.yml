@@ -51,15 +51,17 @@ jobs:
         with:
           github_user: gualmeidap
           github_token: ${{ secrets.METRICS_TOKEN }}
-          
-      - name: Renomear arquivo do Streak
+          path: streak.svg
+
+      # 5. Mover os arquivos do Lowlighter (/rendered/) para a raiz do workspace
+      - name: Mover arquivos do lowlighter/metrics
         run: |
-          if [ -f github-readme-streak-stats.svg ]; then
-            mv github-readme-streak-stats.svg streak.svg
+          if [ -d /rendered ]; then
+            cp -r /rendered/* .
           fi
         shell: bash
           
-      # 5. Salvar tudo no repositório com um único commit
+      # 6. Salvar tudo no repositório com um único commit
       - name: Salvar tudo no repositório
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
