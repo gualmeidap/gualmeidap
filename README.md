@@ -58,15 +58,16 @@ I'm a **Back-end Developer** passionate about building systems that solve real o
 ## 📊 GitHub Metrics
 
 ### Lines of Code & Languages
-<div align="center">
-  <img src="stats.svg" alt="GitHub Stats" />
-  <img src="langs.svg" alt="Top Languages" />
-</div>
-
-### 🔥 Contribution Streak
-<div align="center">
-  <img src="streak.svg" alt="GitHub Streak" />
-</div>
+<table align="center">
+  <tr valign="top">
+    <td>
+      <img src="stats.svg" alt="GitHub Stats" width="450" />
+    </td>
+    <td>
+      <img src="langs.svg" alt="Top Languages" width="450" />
+    </td>
+  </tr>
+</table>
 
 ---
 
