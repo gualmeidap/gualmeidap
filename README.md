@@ -69,7 +69,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 **Demo:** [Access Live System](https://api-notas-demo.onrender.com/)
 
-![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/static/images/demo_dashboard.webp)
+![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/static/images/demo_dashboard.gif)
 
 `Python` · `FastAPI` · `Tesseract OCR` · `IMAP/SMTP` · `Microsoft Graph API` · `PostgreSQL` · `Docker`
 
