@@ -69,6 +69,8 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 **Demo:** [Access Live System](https://api-notas-demo.onrender.com/)
 
+![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/static/images/demo_dashboard.png)
+
 `Python` · `FastAPI` · `Tesseract OCR` · `IMAP/SMTP` · `Microsoft Graph API` · `PostgreSQL` · `Docker`
 
 ---
@@ -76,6 +78,10 @@ Most of what I build replaces something that used to be done by hand. Document p
 ### 🔐 User Provisioning Integration — Portal 365 × TOTVS RM
 
 > Integration between the institutional portal and the TOTVS RM database for user account provisioning: creation, password reset and access blocking. Replaced a workflow that depended on manually opening a ticket with the IT department, with identity validation against academic records and handling of two distinct Active Directory domains.
+
+![User Provisioning Demo Flow](https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/fluxo-criacao.gif)
+
+**Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
 `Python` · `TOTVS RM` · `Active Directory / LDAP` · `SQL Server` · `REST APIs`
 
