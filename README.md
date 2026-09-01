@@ -67,7 +67,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 >
 > **Engineering focus:** low-confidence extractions are routed to a human review queue instead of being guessed — wrong data never silently enters the approval flow.
 
-[![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/fluxo-automacao.gif)](https://github.com/gualmeidap/api-notas-demo)
+[![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/demo-github.gif)](https://github.com/gualmeidap/api-notas-demo)
 
 **Demo:** [Access Live System](https://api-notas-demo.onrender.com/) · **Repository:** [api-notas-demo](https://github.com/gualmeidap/api-notas-demo)
 
