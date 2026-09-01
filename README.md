@@ -37,6 +37,8 @@ Most of what I build replaces something that used to be done by hand. Document p
 ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![Tesseract OCR](https://img.shields.io/badge/Tesseract_OCR-5C3EE8?style=flat-square&logo=tesseract&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
 ### Data
 
@@ -84,6 +86,30 @@ Most of what I build replaces something that used to be done by hand. Document p
 **Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
 `Python` · `TOTVS RM` · `Active Directory / LDAP` · `SQL Server` · `REST APIs`
+
+---
+
+### ✒️ Electronic Signature Portal — DocuSeal × Active Directory
+
+> Internal corporate portal that runs electronic signature workflows for HR, Finance and IT. Handles documents with any number of signers, optional strict ordering, deadlines and CC, pulling contacts straight from the institutional Active Directory. Signers never leave the platform — the DocuSeal widget opens inside the dashboard itself.
+>
+> **Engineering focus:** the dashboard updates itself. When a document is signed, DocuSeal fires an HMAC-SHA256 webhook at the Go back end, which pushes the change to every open screen over Server-Sent Events — no polling, and nobody reloads a page to find out whose turn it is.
+
+**Source:** internal system — repository not public
+
+`Go 1.24` · `React 19` · `PostgreSQL` · `Active Directory / LDAP` · `Server-Sent Events` · `Microsoft Graph API` · `Tailwind CSS`
+
+---
+
+### 🔑 Student Password Self-Service
+
+> Lets a student reset their own Active Directory password without going through the registrar's office. Identity is validated as a block against academic records — student ID, national ID and date of birth — and a single-use 6-digit code then goes to the academic email address, valid for 15 minutes. The new password is checked against domain policy before the bind, and the account is unlocked in the same operation.
+>
+> **Engineering focus:** the response is identical whether the student ID exists or not, so the form can't be turned into an enrollment enumeration oracle. Rate limiting (3 per ID, 10 per IP every 30 minutes) is applied *before* any query reaches the ERP, so a flood never becomes database load.
+
+**Source:** internal system — repository not public
+
+`Python` · `Active Directory / LDAP` · `TOTVS RM` · `Microsoft Graph API`
 
 ---
 
