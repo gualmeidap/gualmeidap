@@ -67,9 +67,9 @@ Most of what I build replaces something that used to be done by hand. Document p
 >
 > **Engineering focus:** low-confidence extractions are routed to a human review queue instead of being guessed — wrong data never silently enters the approval flow.
 
-**Demo:** [Access Live System](https://api-notas-demo.onrender.com/)
+[![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/fluxo-automacao.gif)](https://github.com/gualmeidap/api-notas-demo)
 
-![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/fluxo-automacao.gif)
+**Demo:** [Access Live System](https://api-notas-demo.onrender.com/) · **Repository:** [api-notas-demo](https://github.com/gualmeidap/api-notas-demo)
 
 `Python` · `FastAPI` · `Tesseract OCR` · `IMAP/SMTP` · `Microsoft Graph API` · `PostgreSQL` · `Docker`
 
@@ -79,9 +79,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 > Integration between the institutional portal and the TOTVS RM database for user account provisioning: creation, password reset and access blocking. Replaced a workflow that depended on manually opening a ticket with the IT department, with identity validation against academic records and handling of two distinct Active Directory domains.
 
-<a href="https://github.com/gualmeidap/portal-ti-o365-demo">
-  <img src="https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/portal-ti.gif" width="760" alt="Portal TI: provisionamento em Microsoft 365, diretório local e ERP numa ação; e recusa automática ao tentar bloquear um técnico">
-</a>
+[![Portal TI: provisioning across Microsoft 365, the local directory and the ERP in one action, plus the automatic refusal when blocking a technician](https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/portal-ti.gif)](https://github.com/gualmeidap/portal-ti-o365-demo)
 
 **Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
