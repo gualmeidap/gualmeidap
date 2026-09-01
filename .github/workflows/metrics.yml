@@ -33,7 +33,8 @@ jobs:
           committer_token: ${{ secrets.METRICS_TOKEN }}
           base: "" 
           plugin_languages: yes
-          plugin_languages_ignored: html, css
+          plugin_languages_ignored: html, css, shaderlab, hlsl
+          plugin_languages_limit: 12
           plugin_languages_details: percentage
           config_theme: github-dark
           plugins_errors_fatal: yes

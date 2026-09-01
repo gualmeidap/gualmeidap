@@ -1,3 +1,5 @@
+<div align="center">
+
 # Hey, I'm Gustavo Henrique 👋
 
 **Back-end Developer** · Building scalable systems, automating workflows & designing robust architectures
@@ -5,6 +7,8 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gualmeidap)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gualmeidap)
 [![Profile Views](https://komarev.com/ghpvc/?username=gualmeidap&style=for-the-badge&color=6e7681)](https://github.com/gualmeidap)
+
+</div>
 
 ---
 
@@ -143,15 +147,29 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ### Lines of Code & Languages
 
-| ![GitHub Stats](./stats.svg) | ![Top Languages](./langs.svg) |
-| --- | --- |
+<table align="center">
+  <tr valign="top">
+    <td>
+      <img src="stats.svg" alt="GitHub Stats" width="450" />
+    </td>
+    <td>
+      <img src="langs.svg" alt="Top Languages" width="450" />
+    </td>
+  </tr>
+</table>
 
 ---
 
 ### 📈 Contribution Activity Graph
 
-![Contribution Activity Graph](./activity.svg)
+<div align="center">
+  <img src="activity.svg" alt="Contribution Activity Graph"/>
+</div>
 
 ---
 
+<div align="center">
+
 *"First, solve the problem. Then, write the code."* — John Johnson
+
+</div>
