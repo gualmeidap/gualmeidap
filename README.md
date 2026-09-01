@@ -79,7 +79,9 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 > Integration between the institutional portal and the TOTVS RM database for user account provisioning: creation, password reset and access blocking. Replaced a workflow that depended on manually opening a ticket with the IT department, with identity validation against academic records and handling of two distinct Active Directory domains.
 
-![User Provisioning Demo Flow](https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/fluxo-criacao.gif)
+<a href="https://github.com/gualmeidap/portal-ti-o365-demo">
+  <img src="https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/portal-ti.gif" width="760" alt="Portal TI: provisionamento em Microsoft 365, diretório local e ERP numa ação; e recusa automática ao tentar bloquear um técnico">
+</a>
 
 **Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
