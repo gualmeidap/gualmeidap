@@ -89,11 +89,27 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ### 🤝 Partnership Management System
 
-> Internal back-end platform for information extraction, email workflow orchestration and auditing, combining OCR with locally hosted generative AI in a containerized, scalable environment with asynchronous processing. Replaced entirely manual, spreadsheet-based workflows, centralizing partnership tracking, contract management and operational reporting into a single auditable system.
+> Internal back-end platform for information extraction, email workflow orchestration and auditing, combining OCR with locally hosted generative AI. Replaced entirely manual, spreadsheet-based workflows, centralizing partnership tracking, contract management and operational reporting into a single auditable system with role-based access.
 >
-> **Engineering focus:** production practices for AI agents — traceability, output quality monitoring, hallucination mitigation and explicit guardrails.
+> **Engineering focus:** production practices for AI agents — traceability, output quality monitoring, hallucination mitigation and explicit guardrails. Digital PDFs are parsed directly; only pages that come back empty fall through to OCR, so the expensive path runs when it is actually needed.
 
-`Python` · `Flask` · `PostgreSQL` · `Tesseract OCR` · `Ollama` · `Docker`
+**Repository:** [api-convenios](https://github.com/gualmeidap/api-convenios)
+
+`Python` · `Flask` · `PostgreSQL` · `Tesseract OCR` · `Ollama` · `SQLAlchemy`
+
+---
+
+## 🔨 Currently Building
+
+### 🛰 Sentinela — Availability & Business Event Monitoring
+
+> Dashboard that answers two questions instead of one: whether each production system is responding, and what it actually did — how many password resets succeeded today, how many failed, and why. Uptime tooling covers the first question well, but none of it knows what a "password reset" is; that meaning only exists inside the monitored systems. A green panel and a stuck user coexist without contradicting each other, and that gap is what this covers.
+>
+> **Design constraint:** no personal data ever enters Sentinela — not masked on display, it never leaves the source system. Event types and failure reasons come from a closed vocabulary instead of raw log messages: raw messages eventually smuggle in a username, and they break grouping. "3 failures, all from the same unavailable dependency" is the useful answer; "3 failures" is not.
+
+**Status:** early development — API skeleton deployed, collector and web panel not started yet · **Repository:** [sentinela](https://github.com/gualmeidap/sentinela)
+
+`Java 21` · `Spring Boot` · `AWS Lambda` · `DynamoDB` · `EventBridge` · `S3 + CloudFront`
 
 ---
 
