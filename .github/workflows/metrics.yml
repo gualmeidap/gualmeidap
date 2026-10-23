@@ -57,19 +57,3 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-
-      # 5. Streak
-      - name: Gerar Streak
-        uses: DenverCoder1/github-readme-streak-stats@v1.7.0
-        with:
-          github_user: gualmeidap
-          github_token: ${{ secrets.METRICS_TOKEN }}
-          path: streak.svg
-          options: theme=dark
-
-      # 6. Salvar Streak no repositório
-      - name: Salvar Streak no repositório
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Atualiza as métricas (Streak)"
-          file_pattern: "streak.svg"

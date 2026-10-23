@@ -20,7 +20,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 - 🏢 Software Developer at **Universidade Brasil**, building internal platforms for academic, financial and IT operations
 - 🎓 B.Sc. in Computer Science at **UNICID** — expected graduation Dec 2026
-- 🔭 Currently working on identity and access automation across two Active Directory domains
+- 🔭 Currently building **Sentinela** — monitoring for system availability and business events (Java, Spring Boot, AWS)
 - 🧠 Exploring local AI inference with **Ollama** for private, production-ready LLM integration
 - 🐳 Strong believer in containerized, reproducible environments
 
@@ -61,7 +61,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ### Practices
 
-`REST APIs` · `Microservices` · `JWT` · `Clean Code` · `SOLID` · `Layered Architecture` · `Async Processing`
+`REST APIs` · `JWT` · `Clean Code` · `SOLID` · `Layered Architecture` · `Async Processing`
 
 ---
 
@@ -75,7 +75,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 [![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/demo-github.gif)](https://github.com/gualmeidap/api-notas-demo)
 
-**Demo:** [Access Live System](https://api-notas-demo.onrender.com/) · **Repository:** [api-notas-demo](https://github.com/gualmeidap/api-notas-demo)
+**Demo:** [Access Live System](https://api-notas-demo.onrender.com/) *(free tier — first load can take up to a minute)* · **Repository:** [api-notas-demo](https://github.com/gualmeidap/api-notas-demo)
 
 `Python` · `FastAPI` · `Tesseract OCR` · `IMAP/SMTP` · `Microsoft Graph API` · `PostgreSQL` · `Docker`
 
@@ -87,7 +87,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 [![Portal TI: provisioning across Microsoft 365, the local directory and the ERP in one action, plus the automatic refusal when blocking a technician](https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/portal-ti.gif)](https://github.com/gualmeidap/portal-ti-o365-demo)
 
-**Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
+**Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) *(free tier — first load can take up to a minute)* · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
 `Python` · `TOTVS RM` · `Active Directory / LDAP` · `SQL Server` · `REST APIs`
 
@@ -133,7 +133,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ### 🛰 Sentinela — Availability & Business Event Monitoring
 
-> Dashboard that answers two questions instead of one: whether each production system is responding, and what it actually did — how many password resets succeeded today, how many failed, and why. Uptime tooling covers the first question well, but none of it knows what a "password reset" is; that meaning only exists inside the monitored systems. A green panel and a stuck user coexist without contradicting each other, and that gap is what this covers.
+> Dashboard that answers two questions instead of one: is each production system responding, and what did it actually do — how many password resets succeeded today, how many failed, and why. Uptime tools cover the first; only the monitored systems know what a "password reset" is.
 >
 > **Design constraint:** no personal data ever enters Sentinela — not masked on display, it never leaves the source system. Event types and failure reasons come from a closed vocabulary instead of raw log messages: raw messages eventually smuggle in a username, and they break grouping. "3 failures, all from the same unavailable dependency" is the useful answer; "3 failures" is not.
 
