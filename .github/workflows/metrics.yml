@@ -23,6 +23,22 @@ jobs:
           config_theme: github-dark
           plugins_errors_fatal: yes
           debug: yes
+      # Mesma imagem em PNG: o palacio MindSpace (Unity) nao desenha SVG com HTML dentro.
+      - name: Gerar Stats (Lines of Code) (PNG para o MindSpace)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: stats.png
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_lines: yes
+          plugin_lines_sections: base, repositories
+          plugin_lines_repositories_limit: 10
+          config_theme: github-dark
+          plugins_errors_fatal: yes
+          debug: yes
+          config_output: png
+
 
       # 2. Langs (Ignorando front-end) - Auto-commit via API com Erro Fatal Ativo
       - name: Gerar Langs
@@ -38,7 +54,23 @@ jobs:
           plugin_languages_details: percentage
           config_theme: github-dark
           plugins_errors_fatal: yes
+      # Mesma imagem em PNG: o palacio MindSpace (Unity) nao desenha SVG com HTML dentro.
+      - name: Gerar Langs (PNG para o MindSpace)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: langs.png
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          base: "" 
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, shaderlab, hlsl
+          plugin_languages_limit: 12
+          plugin_languages_details: percentage
+          config_theme: github-dark
+          plugins_errors_fatal: yes
+          config_output: png
           
+
       # 3. Activity Graph (Calendário Isométrico local) - Auto-commit via API com Erro Fatal Ativo
       - name: Gerar Activity Graph
         uses: lowlighter/metrics@latest
@@ -51,6 +83,20 @@ jobs:
           plugin_isocalendar_duration: full-year
           config_theme: github-dark
           plugins_errors_fatal: yes
+      # Mesma imagem em PNG: o palacio MindSpace (Unity) nao desenha SVG com HTML dentro.
+      - name: Gerar Activity Graph (PNG para o MindSpace)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: activity.png
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          config_theme: github-dark
+          plugins_errors_fatal: yes
+          config_output: png
+
 
       # 4. Checkout do repositório (Agora com os SVGs atualizados inclusos)
       - name: Checkout do repositório
