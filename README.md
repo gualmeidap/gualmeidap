@@ -1,12 +1,13 @@
 <div align="center">
 
-# Hey, I'm Gustavo Henrique 👋
+# Hey, I'm Gustavo Almeida 👋
 
-**Back-end Developer** · Building scalable systems, automating workflows & designing robust architectures
+**Back-end Developer** · Python & Java · Integrations, automation and APIs
+
+🌍 **Open to remote roles** (US/EU companies) · English: advanced · São Paulo, Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gualmeidap)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gualmeidap)
-[![Profile Views](https://komarev.com/ghpvc/?username=gualmeidap&style=for-the-badge&color=6e7681)](https://github.com/gualmeidap)
 
 </div>
 
@@ -19,8 +20,9 @@ I'm a **Back-end Developer** building systems that solve real operational proble
 Most of what I build replaces something that used to be done by hand. Document pipelines that used to be manual reconciliation. User provisioning that used to be a support ticket. That's the thread across everything below.
 
 - 🏢 Software Developer at **Universidade Brasil**, building internal platforms for academic, financial and IT operations
-- 🎓 B.Sc. in Computer Science at **UNICID** — expected graduation Dec 2026
-- 🔭 Currently building **Sentinela** — monitoring for system availability and business events (Java, Spring Boot, AWS)
+- 🎓 B.Sc. in Computer Science at **UNICID** — graduating 2026
+- 🛠 4+ years in IT (technical support since 2022, software development since March 2026)
+- 🔭 **Sentinela** — monitoring for system availability and business events (Java 21, Spring Boot, AWS Lambda/DynamoDB) — [live on AWS](https://github.com/gualmeidap/sentinela), 118 automated tests, CI on every push
 - 🧠 Exploring local AI inference with **Ollama** for private, production-ready LLM integration
 - 🐳 Strong believer in containerized, reproducible environments
 
@@ -129,23 +131,19 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ---
 
-## 🔨 Currently Building
-
-### 🛰 Sentinela — Availability & Business Event Monitoring
+## 🔨 Sentinela — Availability & Business Event Monitoring
 
 > Dashboard that answers two questions instead of one: is each production system responding, and what did it actually do — how many password resets succeeded today, how many failed, and why. Uptime tools cover the first; only the monitored systems know what a "password reset" is.
 >
 > **Design constraint:** no personal data ever enters Sentinela — not masked on display, it never leaves the source system. Event types and failure reasons come from a closed vocabulary instead of raw log messages: raw messages eventually smuggle in a username, and they break grouping. "3 failures, all from the same unavailable dependency" is the useful answer; "3 failures" is not.
 
-**Status:** early development — API skeleton deployed, collector and web panel not started yet · **Repository:** [sentinela](https://github.com/gualmeidap/sentinela)
+**Status:** running on AWS (collector every 5 min, API and dashboard on Lambda, DynamoDB), $0/month on the Always Free tier · 118 tests · GitHub Actions CI · **Repository:** [sentinela](https://github.com/gualmeidap/sentinela)
 
-`Java 21` · `Spring Boot` · `AWS Lambda` · `DynamoDB` · `EventBridge` · `S3 + CloudFront`
+`Java 21` · `Spring Boot` · `AWS Lambda` · `DynamoDB` · `EventBridge` · `CloudFormation` · `GitHub Actions`
 
 ---
 
 ## 📊 GitHub Metrics
-
-### Lines of Code & Languages
 
 <table align="center">
   <tr valign="top">
