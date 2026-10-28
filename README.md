@@ -71,7 +71,7 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ### 🧾 Tax Document Automation & Intelligent Extraction
 
-> End-to-end back-end system that automates tax document workflows. The extraction engine reads, decrypts and reconciles invoices and payment slips from dozens of suppliers, backed by intelligent email tracking, automated archiving to SharePoint and an interactive management dashboard. Replaced a fully manual reconciliation process and shortened the purchase approval cycle.
+> End-to-end back-end system that automates tax document workflows. The extraction engine reads, decrypts and reconciles invoices and payment slips from dozens of suppliers, backed by intelligent email tracking, automated archiving to SharePoint and an interactive management dashboard. Replaced a fully manual reconciliation process and shortened the purchase approval cycle. In production it handles about 30 suppliers a month (1–2 documents each).
 >
 > **Engineering focus:** low-confidence extractions are routed to a human review queue instead of being guessed — wrong data never silently enters the approval flow.
 
