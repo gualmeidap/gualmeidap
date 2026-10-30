@@ -115,6 +115,8 @@ Most of what I build replaces something that used to be done by hand. Document p
 >
 > **Engineering focus:** the response is identical whether the student ID exists or not, so the form can't be turned into an enrollment enumeration oracle. Rate limiting (3 per ID, 10 per IP every 30 minutes) is applied *before* any query reaches the ERP, so a flood never becomes database load.
 
+![Student Password Self-Service: identity check, 6-digit code sent to the academic email, new password checked against domain policy, account unlocked, and the rate-limit refusal (demo data)](docs/senha-aluno.gif)
+
 **Source:** internal system — repository not public
 
 `Python` · `Active Directory / LDAP` · `TOTVS RM` · `Microsoft Graph API`
