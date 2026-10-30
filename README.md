@@ -119,18 +119,6 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ---
 
-### 🤝 Partnership Management System
-
-> Internal back-end platform for information extraction, email workflow orchestration and auditing, combining OCR with locally hosted generative AI. Replaced entirely manual, spreadsheet-based workflows, centralizing partnership tracking, contract management and operational reporting into a single auditable system with role-based access.
->
-> **Engineering focus:** production practices for AI agents — traceability, output quality monitoring, hallucination mitigation and explicit guardrails. Digital PDFs are parsed directly; only pages that come back empty fall through to OCR, so the expensive path runs when it is actually needed.
-
-**Repository:** [api-convenios](https://github.com/gualmeidap/api-convenios)
-
-`Python` · `Flask` · `PostgreSQL` · `Tesseract OCR` · `Ollama` · `SQLAlchemy`
-
----
-
 ## 🔨 Sentinela — Availability & Business Event Monitoring
 
 > Dashboard that answers two questions instead of one: is each production system responding, and what did it actually do — how many password resets succeeded today, how many failed, and why. Uptime tools cover the first; only the monitored systems know what a "password reset" is.
