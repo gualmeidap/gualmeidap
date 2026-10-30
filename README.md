@@ -101,6 +101,8 @@ Most of what I build replaces something that used to be done by hand. Document p
 >
 > **Engineering focus:** the dashboard updates itself. When a document is signed, DocuSeal fires an HMAC-SHA256 webhook at the Go back end, which pushes the change to every open screen over Server-Sent Events — no polling, and nobody reloads a page to find out whose turn it is.
 
+![Electronic Signature Portal: a multi-signer flow with strict order, signing inside the dashboard, and the dashboard updating itself over Server-Sent Events (demo data)](docs/assinador.gif)
+
 **Source:** internal system — repository not public
 
 `Go 1.24` · `React 19` · `PostgreSQL` · `Active Directory / LDAP` · `Server-Sent Events` · `Microsoft Graph API` · `Tailwind CSS`
