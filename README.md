@@ -143,20 +143,6 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ---
 
-## 🏛 MindSpace — VR Memory Palace
-
-> A memory palace you walk through: a neoclassical marble rotunda where every GitHub repository becomes a framed panel showing its README — HTML, tables, badges and screenshots included. A side corridor leads to a guard room where each system monitored by Sentinela is a column with a status lamp. Built for Android phones with Google Cardboard.
->
-> **Engineering focus:** nothing is hand-placed in the editor — architecture, materials and lighting are generated in code at runtime, so the palace rebuilds itself when a repository is added. Made to run on an old phone: README images are downscaled on the GPU under a fixed memory budget, and the phone build carries only a read-only token.
-
-![MindSpace: walking from the profile README panel through the rotunda and the corridor into the Sentinela guard room](docs/mindspace-tour.gif)
-
-**Status:** in development · **Source:** private repository
-
-`Unity` · `C#` · `Google Cardboard` · `GitHub API` · `Procedural geometry`
-
----
-
 ## 📊 GitHub Metrics
 
 <table align="center">
