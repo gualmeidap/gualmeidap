@@ -1,10 +1,12 @@
 <div align="center">
 
+🇺🇸 **English** · 🇧🇷 [Português](README.pt-BR.md)
+
 # Hey, I'm Gustavo Almeida 👋
 
-**Back-end Developer** · Python & Java · Integrations, automation and APIs
+**Software Engineer** · Python, Go & AWS · Applied AI, APIs and Automation
 
-🌍 **Open to remote roles** (US/EU companies) · English: advanced · São Paulo, Brazil
+🌍 **Open to remote roles** (US/EU companies) · English: fluent · São Paulo, Brazil
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gualmeidap)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gualmeidap)
@@ -15,13 +17,13 @@
 
 ## About Me
 
-I'm a **Back-end Developer** building systems that solve real operational problems at scale. My focus is process orchestration, systems integration, and APIs that are both performant and maintainable. I work close to infrastructure — from containerized deployments to integrating local LLMs into production workflows — always with an eye toward clean, purposeful engineering.
+I'm a **Software Engineer** building systems that solve real operational problems at scale. My focus is process orchestration, systems integration, and APIs that are both performant and maintainable. I work close to infrastructure — from containerized deployments to integrating local LLMs into production workflows — always with an eye toward clean, purposeful engineering.
 
 Most of what I build replaces something that used to be done by hand. Document pipelines that used to be manual reconciliation. User provisioning that used to be a support ticket. That's the thread across everything below.
 
-- 🏢 Software Developer at **Universidade Brasil**, building internal platforms for academic, financial and IT operations
-- 🎓 B.Sc. in Computer Science at **UNICID** — graduating 2026
-- 🛠 4+ years in IT (technical support since 2022, software development since March 2026)
+- 🏢 Software Engineer at **Universidade Brasil**, building internal platforms for academic, financial and IT operations
+- 🎓 B.Sc. in Computer Science at **UNICID** — graduating December 2026
+- 🛠 4+ years in IT (IT analyst since 2022, software engineer since March 2026)
 - 🔭 **Sentinela** — monitoring for system availability and business events (Java 21, Spring Boot, AWS Lambda/DynamoDB) — [live on AWS](https://github.com/gualmeidap/sentinela), 118 automated tests, CI on every push
 - 🧠 Exploring local AI inference with **Ollama** for private, production-ready LLM integration
 - 🐳 Strong believer in containerized, reproducible environments
@@ -69,57 +71,31 @@ Most of what I build replaces something that used to be done by hand. Document p
 
 ## 🚀 Featured Projects
 
-### 🧾 Tax Document Automation & Intelligent Extraction
+### 🧾 Portal Notas: Tax Document Automation & Intelligent Extraction
 
-> End-to-end back-end system that automates tax document workflows. The extraction engine reads, decrypts and reconciles invoices and payment slips from dozens of suppliers, backed by intelligent email tracking, automated archiving to SharePoint and an interactive management dashboard. Replaced a fully manual reconciliation process and shortened the purchase approval cycle. In production it handles about 30 suppliers a month (1–2 documents each).
+> End-to-end back-end system that automates the intake of supplier invoices. Invoices arrive in shared mailboxes (Microsoft Graph), go through an approval workflow (Purchasing or straight to Fiscal), are extracted with PDF parsing, OCR and config-driven supplier rules, archived to SharePoint, and Finance gets a consolidated spreadsheet. Replaced a fully manual reconciliation process and shortened the purchase approval cycle. In daily production: about **50 invoices a month from ~30 suppliers**, with about 85% less manual work (my estimate).
 >
-> **Engineering focus:** low-confidence extractions are routed to a human review queue instead of being guessed — wrong data never silently enters the approval flow.
+> **Engineering focus:** low-confidence extractions are routed to a human review queue instead of being guessed — wrong data never silently enters the approval flow. A local LLM only helps register new suppliers, so invoices never leave the network.
 
-[![Automação Fiscal Dashboard](https://raw.githubusercontent.com/gualmeidap/api-notas-demo/main/docs/capturas/demo-github.gif)](https://github.com/gualmeidap/api-notas-demo)
+[![Portal Notas: queue with approval states, human review for low-confidence OCR, month-by-month supplier grid (fictional data)](docs/portal-notas.gif)](https://github.com/gualmeidap/portal-notas-demo)
 
-**Demo:** [Access Live System](https://api-notas-demo.onrender.com/) *(free tier — first load can take up to a minute)* · **Repository:** [api-notas-demo](https://github.com/gualmeidap/api-notas-demo)
+**Demo:** [Open the live demo](https://gualmeidap.github.io/portal-notas-demo/) *(runs entirely in your browser, fictional data)* · **Repository:** [portal-notas-demo](https://github.com/gualmeidap/portal-notas-demo)
 
-`Python` · `FastAPI` · `Tesseract OCR` · `IMAP/SMTP` · `Microsoft Graph API` · `PostgreSQL` · `Docker`
+`Python` · `FastAPI` · `Tesseract OCR` · `Microsoft Graph API` · `PostgreSQL` · `Redis` · `Docker` · `Prometheus` · `Grafana`
 
 ---
 
-### 🔐 User Provisioning Integration — Portal 365 × TOTVS RM
+### 🔐 Portal TI: Access Governance across Microsoft 365, a directory and an ERP
 
-> Integration between the institutional portal and the TOTVS RM database for user account provisioning: creation, password reset and access blocking. Replaced a workflow that depended on manually opening a ticket with the IT department, with identity validation against academic records and handling of two distinct Active Directory domains.
-
-[![Portal TI: provisioning across Microsoft 365, the local directory and the ERP in one action, plus the automatic refusal when blocking a technician](https://raw.githubusercontent.com/gualmeidap/portal-ti-o365-demo/main/docs/capturas/portal-ti.gif)](https://github.com/gualmeidap/portal-ti-o365-demo)
-
-**Demo:** [Access Live System](https://portal-ti-o365-demo.onrender.com/) *(free tier — first load can take up to a minute)* · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
-
-`Python` · `TOTVS RM` · `Active Directory / LDAP` · `SQL Server` · `REST APIs`
-
----
-
-### ✒️ Electronic Signature Portal — DocuSeal × Active Directory
-
-> Internal corporate portal that runs electronic signature workflows for HR, Finance and IT. Handles documents with any number of signers, optional strict ordering, deadlines and CC, pulling contacts straight from the institutional Active Directory. Signers never leave the platform — the DocuSeal widget opens inside the dashboard itself.
+> Internal portal, built from scratch, that creates, resets and blocks a person's access in three systems with one action: Microsoft 365, the on-premises Active Directory and the TOTVS RM ERP. Replaced a workflow that depended on manually opening a ticket with the IT department, with identity validation against academic records and handling of two distinct Active Directory domains.
 >
-> **Engineering focus:** the dashboard updates itself. When a document is signed, DocuSeal fires an HMAC-SHA256 webhook at the Go back end, which pushes the change to every open screen over Server-Sent Events — no polling, and nobody reloads a page to find out whose turn it is.
+> **Engineering focus:** role-based scopes (local IT, central IT, HR), protected accounts that refuse to be blocked, a retry queue for failed provisioning, and a full audit trail. Production and staging run side by side.
 
-![Electronic Signature Portal: a multi-signer flow with strict order, signing inside the dashboard, and the dashboard updating itself over Server-Sent Events (demo data)](docs/assinador.gif)
+[![Portal TI: blocking a person in all three systems at once, then the audit log (fictional data)](docs/portal-ti.gif)](https://github.com/gualmeidap/portal-ti-o365-demo)
 
-**Source:** internal system — repository not public
+**Demo:** [Open the live demo](https://gualmeidap.github.io/portal-ti-o365-demo/) *(runs entirely in your browser, fictional data)* · **Repository:** [portal-ti-o365-demo](https://github.com/gualmeidap/portal-ti-o365-demo)
 
-`Go 1.24` · `React 19` · `PostgreSQL` · `Active Directory / LDAP` · `Server-Sent Events` · `Microsoft Graph API` · `Tailwind CSS`
-
----
-
-### 🔑 Student Password Self-Service
-
-> Lets a student reset their own Active Directory password without going through the registrar's office. Identity is validated as a block against academic records — student ID, national ID and date of birth — and a single-use 6-digit code then goes to the academic email address, valid for 15 minutes. The new password is checked against domain policy before the bind, and the account is unlocked in the same operation.
->
-> **Engineering focus:** the response is identical whether the student ID exists or not, so the form can't be turned into an enrollment enumeration oracle. Rate limiting (3 per ID, 10 per IP every 30 minutes) is applied *before* any query reaches the ERP, so a flood never becomes database load.
-
-![Student Password Self-Service: identity check, 6-digit code sent to the academic email, new password checked against domain policy, account unlocked, and the rate-limit refusal (demo data)](docs/senha-aluno.gif)
-
-**Source:** internal system — repository not public
-
-`Python` · `Active Directory / LDAP` · `TOTVS RM` · `Microsoft Graph API`
+`Python` · `Flask` · `TOTVS RM` · `Active Directory / LDAP` · `SQL Server` · `REST APIs`
 
 ---
 
@@ -132,6 +108,34 @@ Most of what I build replaces something that used to be done by hand. Document p
 **Status:** running on AWS (collector every 5 min, API and dashboard on Lambda, DynamoDB), $0/month on the Always Free tier · 118 tests · GitHub Actions CI · **Repository:** [sentinela](https://github.com/gualmeidap/sentinela)
 
 `Java 21` · `Spring Boot` · `AWS Lambda` · `DynamoDB` · `EventBridge` · `CloudFormation` · `GitHub Actions`
+
+---
+
+### ✒️ Electronic Signature Portal (in development)
+
+> Internal corporate portal for HR, Finance and IT to run electronic signature workflows. Handles documents with any number of signers, optional strict ordering, deadlines and CC, pulling contacts straight from the institutional Active Directory. The signature provider sits behind an interface: self-hosted Documenso by default, DocuSeal as an alternative. Signers never leave the platform.
+>
+> **Engineering focus:** the dashboard updates itself. When a document is signed, the provider fires an HMAC-verified webhook at the Go back end, which pushes the change to every open screen over Server-Sent Events — no polling, and nobody reloads a page to find out whose turn it is.
+
+![Electronic Signature Portal: a multi-signer flow with strict order, signing inside the dashboard, and the dashboard updating itself over Server-Sent Events (demo data)](docs/assinador.gif)
+
+**Source:** internal system — repository not public
+
+`Go 1.24` · `React 19` · `PostgreSQL` · `Active Directory / LDAP` · `Server-Sent Events` · `Microsoft Graph API` · `Tailwind CSS`
+
+---
+
+### 🔑 Student Password Self-Service
+
+> A small portal that lets a student reset their own Active Directory password without going through the registrar's office. Identity is validated against academic records, and a single-use 6-digit code then goes to the academic email address, valid for 15 minutes. The new password is checked against domain policy before the bind, and the account is unlocked in the same operation.
+>
+> **Engineering focus:** the response is identical whether the student ID exists or not, so the form can't be turned into an enrollment enumeration oracle. Rate limiting is applied *before* any query reaches the ERP, so a flood never becomes database load.
+
+![Student Password Self-Service: identity check, 6-digit code sent to the academic email, new password checked against domain policy, account unlocked, and the rate-limit refusal (demo data)](docs/senha-aluno.gif)
+
+**Source:** internal system — repository not public
+
+`Python` · `Active Directory / LDAP` · `TOTVS RM` · `Microsoft Graph API`
 
 ---
 
