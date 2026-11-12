@@ -15,7 +15,7 @@
 
 ---
 
-## 🇧🇷 Português
+<h2><img src="https://flagcdn.com/w40/br.png" width="32" alt="Brasil"> Português</h2>
 
 Sou **Software Engineer** e construo sistemas que resolvem problemas operacionais reais em escala: orquestração de processos, integração de sistemas e APIs. A maior parte do que eu construo substitui algo que antes era feito à mão.
 
@@ -30,7 +30,7 @@ Software Engineer na **Universidade Brasil**, onde construo plataformas internas
 
 ---
 
-## 🇺🇸 English
+<h2><img src="https://flagcdn.com/w40/us.png" width="32" alt="United States"> English</h2>
 
 I'm a **Software Engineer** building systems that solve real operational problems at scale: process orchestration, systems integration and APIs. Most of what I build replaces something that used to be done by hand.
 
