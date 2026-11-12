@@ -25,7 +25,7 @@ Software Engineer na **Universidade Brasil**, onde construo plataformas internas
 
 - 🧾 [**Portal Notas**](https://github.com/gualmeidap/portal-notas-demo): automação de faturas de fornecedores, em produção diária (~50 notas por mês). [Demo ao vivo](https://gualmeidap.github.io/portal-notas-demo/)
 - 🔐 [**Portal TI**](https://github.com/gualmeidap/portal-ti-o365-demo): governança de acesso entre Microsoft 365, Active Directory e um ERP. [Demo ao vivo](https://gualmeidap.github.io/portal-ti-o365-demo/)
-- 🔨 [**Sentinela**](https://github.com/gualmeidap/sentinela): monitoramento de disponibilidade e de eventos de negócio na AWS, a custo zero
+- 🔨 [**Sentinela**](https://github.com/gualmeidap/sentinela): monitoramento de disponibilidade e de eventos de negócio na AWS, a custo zero [Painel ao vivo](https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/)
 - ✒️ **Portal de assinatura eletrônica** (em desenvolvimento) e 🔑 **autoatendimento de senha** (sistemas internos)
 
 ---
@@ -40,8 +40,13 @@ Software Engineer at **Universidade Brasil**, building internal platforms for ac
 
 - 🧾 [**Portal Notas**](https://github.com/gualmeidap/portal-notas-demo): supplier invoice automation, in daily production (~50 invoices a month). [Live demo](https://gualmeidap.github.io/portal-notas-demo/)
 - 🔐 [**Portal TI**](https://github.com/gualmeidap/portal-ti-o365-demo): access governance across Microsoft 365, Active Directory and an ERP. [Live demo](https://gualmeidap.github.io/portal-ti-o365-demo/)
-- 🔨 [**Sentinela**](https://github.com/gualmeidap/sentinela): availability and business-event monitoring on AWS, at zero cost
+- 🔨 [**Sentinela**](https://github.com/gualmeidap/sentinela): availability and business-event monitoring on AWS, at zero cost [Live dashboard](https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/)
 - ✒️ **Electronic signature portal** (in development) and 🔑 **student password self-service** (internal systems)
+
+<div align="center">
+  <a href="https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/"><img src="docs/sentinela.png" width="520" alt="Sentinela"></a>
+  <br><sub>Sentinela: painel ao vivo na AWS · live dashboard on AWS</sub>
+</div>
 
 ---
 
