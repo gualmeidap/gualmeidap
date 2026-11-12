@@ -43,11 +43,6 @@ Software Engineer at **Universidade Brasil**, building internal platforms for ac
 - 🔨 [**Sentinela**](https://github.com/gualmeidap/sentinela): availability and business-event monitoring on AWS, at zero cost [Live dashboard](https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/)
 - ✒️ **Electronic signature portal** (in development) and 🔑 **student password self-service** (internal systems)
 
-<div align="center">
-  <a href="https://ajswegtqzqq75cxnsidkrk4jxy0qqzjt.lambda-url.us-east-1.on.aws/"><img src="docs/sentinela.jpg" width="520" alt="Sentinela"></a>
-  <br><sub>Sentinela: painel ao vivo na AWS · live dashboard on AWS</sub>
-</div>
-
 ---
 
 ## 🛠 Stack
